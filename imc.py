@@ -15,8 +15,14 @@ def classificar_imc(imc):
         return "Obesidade grau II"
     else:
         return "Obesidade grau III (mórbida)"
-
+        
+def mostrar_historico(historico):
+    print("\n📜 Histórico de Cálculos:")
+    for i, entrada in enumerate(historico, 1):
+        peso, altura, imc, classificacao = entrada
+        print(f"{i}. Peso: {peso} kg | Altura: {altura} m → IMC: {imc:.2f} ({classificacao})")
 if __name__ == "__main__":
+    
     try:
         peso = float(input("Digite seu peso (kg): "))
         altura = float(input("Digite sua altura (m): "))
@@ -25,4 +31,12 @@ if __name__ == "__main__":
         print(f"Seu IMC é {imc:.2f} - {classificacao}")
     except ValueError:
         print("Por favor, insira valores numéricos válidos.")
+        continue
+
+continuar = input("Deseja calcular outro IMC? (s/n): ").strip().lower()
+        if continuar != 's':
+            break
+
+    if historico:
+        mostrar_historico(historico)
 
