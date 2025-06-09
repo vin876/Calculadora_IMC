@@ -40,3 +40,8 @@ continuar = input("Deseja calcular outro IMC? (s/n): ").strip().lower()
     if historico:
         mostrar_historico(historico)
 
+from salvar_historico import salvar_historico_txt
+
+# depois de mostrar_historico(historico):
+salvar_historico_txt(historico)
+print(f"\n📝 Histórico salvo em 'historico_imc.txt'")
