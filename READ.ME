@@ -1,22 +1,29 @@
-# 🧠 Lógica de Programação em Python
+# ⚖️ Calculadora de IMC
 
-Bem-vindo ao meu repositório de projetos de **lógica de programação**!  
-Aqui você encontrará uma coleção de mini projetos e desafios desenvolvidos em Python, com o objetivo de praticar raciocínio lógico, algoritmos e habilidades essenciais para a carreira como desenvolvedor.
-
-Este repositório foi criado para documentar minha jornada de aprendizado e servir como portfólio técnico.
+Este projeto é uma calculadora simples de IMC (Índice de Massa Corporal) feita em Python.
 
 ---
 
-## 🧩 Projetos incluídos
+## 🧠 Como funciona?
 
-| Projeto               | Descrição                                              |
-|-----------------------|--------------------------------------------------------|
-| 🔐 Validador de Senha | Verifica se uma senha atende critérios de segurança   |
-| ⚖️ Calculadora IMC    | Calcula o IMC e classifica o resultado                 |
-| 🔢 Número Primo       | Verifica se um número informado é primo                |
-| 📊 Tabuada            | Gera a tabuada de um número escolhido pelo usuário     |
-| 🎲 Par ou Ímpar       | Usuário joga contra o computador                      |
-| 🧬 Fibonacci           | Gera a sequência de Fibonacci até um número escolhido |
-| 🔁 Inversor de String | Inverte o texto digitado pelo usuário                 |
-| 📆 Calculadora de Idade | Calcula idade com base na data de nascimento        |
-| 🧠 Adivinhação        | Jogo onde o usuário tenta adivinhar um número aleatóri
+O IMC é calculado com a fórmula:
+IMC = peso / (altura * altura)
+
+Com base no resultado, o programa classifica em:
+
+- Abaixo do peso
+- Peso normal
+- Sobrepeso
+- Obesidade grau I
+- Obesidade grau II
+- Obesidade grau III (mórbida)
+
+---
+
+## 💻 Exemplo de uso
+
+```bash
+$ python imc.py
+Digite seu peso (kg): 70
+Digite sua altura (m): 1.75
+Seu IMC é 22.86 - Peso normal
